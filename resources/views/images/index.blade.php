@@ -17,6 +17,26 @@
         </style>
     </head>
     <body>
+      <div class="max-w-lg mx-auto mt-24">
+        <h1 class="font-bold text-center text-4xl">
+          File Uploading Comparisons
+        </h1>
 
+
+
+        <h2>
+          FilePond
+        </h2>
+
+        <div id="app"></div>
+
+
+
+
+
+
+
+      </div>
+      <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
