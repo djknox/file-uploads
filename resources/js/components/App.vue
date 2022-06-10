@@ -5,12 +5,18 @@
         </h1>
 
         <FilePondUploader />
+
+        <UppyUploader />
     </div>
 </template>
 <script>
 import FilePondUploader from './FilePondUploader'
+import UppyUploader from './UppyUploader'
 
 export default {
-    components: { FilePondUploader },
+    components: {
+      FilePondUploader,
+      UppyUploader,
+    },
 }
 </script>
