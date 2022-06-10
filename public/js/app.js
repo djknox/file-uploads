@@ -19649,7 +19649,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "image",
     ref: "pond",
     "label-idle": "Click to choose image, or drag here...",
-    "accepted-file-types": "image/*"
+    "accepted-file-types": "image/*",
+    "allow-multiple": true,
+    credits: ""
   }, null, 512
   /* NEED_PATCH */
   )]);

@@ -12,6 +12,8 @@
           ref="pond"
           label-idle="Click to choose image, or drag here..."
           accepted-file-types="image/*"
+          :allow-multiple="true"
+          credits=""
         />
     </div>
 </template>
