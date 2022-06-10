@@ -4,38 +4,13 @@
           File Uploading Comparisons
         </h1>
 
-        <div></div>
-        <h2 class="text-xl text-center">FilePond</h2>
-
-        <file-pond
-          name="image"
-          ref="pond"
-          label-idle="Click to choose image, or drag here..."
-          accepted-file-types="image/*"
-          :allow-multiple="true"
-          credits=""
-        />
+        <FilePondUploader />
     </div>
 </template>
 <script>
-import vueFilePond, { setOptions } from 'vue-filepond'
-import "filepond/dist/filepond.min.css"
-import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'
-
-setOptions({
-    server: {
-        process: {
-            url: './upload',
-            headers: {
-                'X-CSRF-TOKEN': document.head.querySelector('meta[name="csrf_token"]').content
-            }
-        }
-    }
-})
-
-const FilePond = vueFilePond(FilePondPluginFileValidateType)
+import FilePondUploader from './FilePondUploader'
 
 export default {
-    components: { FilePond },
+    components: { FilePondUploader },
 }
 </script>
